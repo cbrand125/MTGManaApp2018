@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical"
+    tools:context="com.codybrand.landcalculator.HelpPageActivity" >
+    
+    <ScrollView
+	    android:id="@+id/HELP_SCROLLER"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:scrollbars="vertical"
+	    android:layout_weight="1.0"
+	    android:fillViewport="true" >
+    	
+	    	<TextView android:id="@+id/help_message"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	       	android:text="@string/help_message"
+	       	android:textSize="18sp" />
+	    	
+    </ScrollView>
+
+</LinearLayout>

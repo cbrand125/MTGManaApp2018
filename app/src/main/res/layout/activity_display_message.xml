@@ -1,0 +1,141 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linearLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:baselineAligned="false"
+	tools:context="com.codybrand.landcalculator.DisplayMessageActivity">
+
+
+	<TextView
+		android:id="@+id/alsoNeedText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		android:text="then you will also need"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/untappedLandText" />
+
+	<TextView
+		android:id="@+id/redUntapped"
+		android:layout_width="50dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:text="0"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/ifUseText" />
+
+	<TextView
+		android:id="@+id/redTapped"
+		android:layout_width="50dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:text="0"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/alsoNeedText" />
+
+	<SeekBar
+		android:id="@+id/redUntappedSeekBar"
+		style="@style/Widget.AppCompat.SeekBar.Discrete"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="16dp"
+		android:thumb="@drawable/ic_untap"
+		app:layout_constraintBottom_toBottomOf="@+id/redUntapped"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/redUntapped"
+		app:layout_constraintTop_toTopOf="@+id/redUntapped"
+		app:layout_constraintVertical_bias="0.58000004" />
+
+	<TextView
+		android:id="@+id/ifUseText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:text="If you use"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/results" />
+
+	<TextView
+		android:id="@+id/untappedLandText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:text="land that comes out untapped"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/redUntapped" />
+
+	<TextView
+		android:id="@+id/results"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		android:textSize="18sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="Results" />
+
+	<TextView
+		android:id="@+id/tappedLandText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		android:text="land that comes out tapped"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		android:textSize="20sp"
+		app:layout_constraintBottom_toBottomOf="@+id/redTapped"
+		app:layout_constraintStart_toEndOf="@+id/redTapped"
+		app:layout_constraintTop_toTopOf="@+id/redTapped"
+		app:layout_constraintVertical_bias="0.58000004" />
+
+	<ImageView
+		android:id="@+id/untapSymbol"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		app:layout_constraintBottom_toBottomOf="@+id/untappedLandText"
+		app:layout_constraintStart_toEndOf="@+id/untappedLandText"
+		app:layout_constraintTop_toTopOf="@+id/untappedLandText"
+		app:srcCompat="@drawable/ic_untap" />
+
+	<ImageView
+		android:id="@+id/tapSymbol"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginStart="16dp"
+		app:layout_constraintBottom_toBottomOf="@+id/tappedLandText"
+		app:layout_constraintStart_toEndOf="@+id/tappedLandText"
+		app:layout_constraintTop_toTopOf="@+id/tappedLandText"
+		app:srcCompat="@drawable/ic_tap" />
+
+
+</android.support.constraint.ConstraintLayout>

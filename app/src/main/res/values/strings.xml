@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MTG Pro Land Assistant</string>
+    <string name="action_settings">Settings</string>
+    <string name="deck_text">Size of the deck</string>
+    <string name="usable_sources"># of mana  sources</string>
+    <string name="by_turn">by turn</string>
+    <string name="achieve_chance">Rate of success (Try 84.5)</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_help">Help</string>
+    <string name="button_reset">Reset</string>
+    <string name="title_activity_display_message">Results</string>
+    <string name="title_activity_help_page">Help Page</string>
+    <string name="description">
+        
+        Simply fill in the form above and press Submit to perform a calculation!\n\n
+        If this is your first time using this app and you do not understand, try the help page!
+        
+	</string>
+    <string name="help_message">
+        
+        Every person who plays Magic: The Gathering has run out of mana at one point. Whether 
+		
+		you\'re one short of playing that powerful creature or have an island when you need a 
+		
+		mountain to play a counter spell, it\'s something that is hard to avoid in M:TG… until now. 
+		
+		Using complex algorithms of probability and hypergeometric calculations, this assistant 
+		
+		will tell you exactly how many lands — and what type of lands — to put in your deck to 
+		
+		cast a certain card on a certain turn. While it is hard to understand at first, using this 
+		
+		application is the MOST accurate way to make a deck with the BEST results.\n\n
+		
+		How to use this application:\n\n
+		
+		1. Create a scenario.\n
+		
+		Say you are in the process of building a black/blue deck. Your best friend loves to 
+		
+		use plenty of spells against you, so you want to be able to use "Cancel" as soon as 
+		
+		possible. "Cancel" costs two blue mana and one colorless mana to cost, so you would 
+		
+		only be able to cast it on turn three at the earliest. In this scenario, your goal is to put the 
+		
+		best amount of mana in your deck so that the probability of having three mana on the 
+		
+		field, two of them being blue, is very high. Create a similar scenario for your deck. 
+		
+		Choose a card and the turn you want to cast it by. Only choose a card that you 
+		
+		ABSOLUTELY want to ensure is played, something that is very important to your deck 
+		
+		mechanics.\n\n
+		
+		2. Find the total amount of land for your deck.\n
+		
+		There is a good chance you will have to do multiple calculations with this 
+		
+		assistant. The card "Cancel" requires two calculations — one to ensure you have the blue 
+		
+		mana required and one to ensure you have three mana total.\n
+		
+		 For the first calculation, you will find the total mana needed in your deck. On the main 
+		
+		page, you would plug in four numbers: The number of cards in your deck (60), the 
+		
+		number of mana sources needed (3), the turn you want to be able to cast the spell (3), 
+		
+		and the probability you have the cards (84.5). The higher the probability, the better 
+		
+		chance you have the cards. We recommend 84.5; that means that out of every ten games 
+		
+		you play, statistically eight and a half of them will allow you to cast this spell. Higher 
+		
+		numbers than that can throw other cards off-balance and increase the amount of land in 
+		
+		your deck.\n
+		
+		So, you hit submit and get your results. 26 untapped lands and 0 tapped lands, 26 
+		
+		untapped lands and 1 tapped land, 26 untapped lands and 2 tapped lands… the list goes on. 
+		
+		What does this mean?\n
+		
+		You searched for the total cost to play "Cancel", three sources of mana, regardless of 
+		
+		color. So these numbers refer to the total amount of land that should be in your deck.
+		
+		"Untapped" lands refer to lands that can be tapped as a mana source the same turn that 
+		
+		they are first played. This is basic land; mountains, islands, swamps, etc. "Tapped" lands 
+		
+		refer to lands that come out on the field tapped and cannot be used until the turn after 
+		
+		they are first played, like Guildgates. So, the calculator says that to cast "Cancel" at least 
+		
+		84.5 percent of the time, you need 26 lands total if only using basic land and 27+ lands if using 
+		
+		certain special lands that cannot be utilized the first turn they appear.\n\n
+		
+		3. Find the amount(s) of specific colored land for your deck.\n
+		
+		Now that you have your total land, how many of those need to be blue? 
+		
+		Go back to the main calculator screen. Input the amount of cards in your deck (60), 
+		
+		but change the amount of sources needed to 2 to reflect the 2 blue mana necessary to 
+		
+		cast "Cancel". The turn (3) and probability (84.5) stay the same. After pressing submit, 
+		
+		you get: 19 untapped lands and 0 tapped lands, 18 untapped lands and 1 tapped land, and 17 
+		
+		untapped lands and 2 tapped lands… so on and so forth. This means that 19 of those 26 -
+		
+		27 lands should be blue to ensure the 84.5 percent success rate of casting "Cancel" on the third 
+		
+		turn.\n
+		
+		With cards that have multiple colors, repeat this step for each color. For a card using red 
+		
+		and white mana, you would perform three calculations. You would perform step two and 
+		
+		then perform step three twice — one for red and white. This works with any amount of 
+		
+		colors and any combination.
+        
+	</string>
+
+</resources>
