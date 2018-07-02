@@ -47,19 +47,16 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundLayerName" value="ic_custom_launcher_background" />
+                                      <entry key="foregroundImage" value="D:\Users\cbran\Documents\AndroidDev\Mana Base Calc\Mana-Base-Calculator-App-be99f48c6ab24ac61790d5eddda0b4c7a59b2078\res\drawable-xxhdpi\ic_launcher.png" />
+                                      <entry key="foregroundLayerName" value="ic_custom_launcher_foreground" />
                                       <entry key="outputName" value="ic_seekbar_thumb_back" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

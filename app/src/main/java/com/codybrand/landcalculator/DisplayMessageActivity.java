@@ -63,7 +63,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 		results.setText(message.toString());
 	}
 
-    public void initComboSeekBar(COLORS color, TreeMap<Integer, Integer> landCombosMap) {
+    public void initComboSeekBar(COLORS color, final TreeMap<Integer, Integer> landCombosMap) {
         int seekBarID;
         int untappedTextID;
         int tappedTextID;
@@ -86,16 +86,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
         untappedText.setText(landCombosMap.lastKey() + "");
         tappedText.setText(landCombosMap.get(landCombosMap.lastKey()) + "");
         seekbar.setProgress(landCombosMap.lastKey());
-        seekbar.setMax(landCombosMap.lastKey());
+        seekbar.setMax(landCombosMap.lastKey() - landCombosMap.firstKey());
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
-                untappedText.setText(progress + "");
-                if (landCombosMapFinal.get(progress) != null) {
-                    tappedText.setText(landCombosMapFinal.get(progress) + "");
-                } else if (landCombosMapFinal.get(progress - 1) != null) {
-                    tappedText.setText(landCombosMapFinal.get(progress - 1) + "");
-                } else {
+                untappedText.setText((progress + landCombosMapFinal.firstKey()) + "");
+                if (landCombosMapFinal.get((progress + landCombosMapFinal.firstKey())) != null) {
+                    tappedText.setText(landCombosMapFinal.get((progress + landCombosMapFinal.firstKey())) + "");
+                } else if (landCombosMapFinal.get((progress + landCombosMapFinal.firstKey()) - 1) != null) {
+                    tappedText.setText(landCombosMapFinal.get((progress + landCombosMapFinal.firstKey()) - 1) + "");
+                } else if (landCombosMapFinal.get((progress + landCombosMapFinal.firstKey()) - 2) != null) {
+                    tappedText.setText(landCombosMapFinal.get((progress + landCombosMapFinal.firstKey()) - 2) + "");
+                }else {
                     tappedText.setText(":(");
                 }
             }
