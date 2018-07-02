@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MTG Pro Land Assistant</string>
+    <string name="app_name">MTG Hypergeometric Land Assistant</string>
     <string name="action_settings">Settings</string>
-    <string name="deck_text">Size of the deck</string>
-    <string name="usable_sources"># of mana  sources</string>
     <string name="by_turn">by turn</string>
-    <string name="achieve_chance">Rate of success (Try 84.5)</string>
     <string name="button_submit">Submit</string>
     <string name="button_help">Help</string>
     <string name="button_reset">Reset</string>
     <string name="title_activity_display_message">Results</string>
     <string name="title_activity_help_page">Help Page</string>
-    <string name="description">
-        
-        Simply fill in the form above and press Submit to perform a calculation!\n\n
-        If this is your first time using this app and you do not understand, try the help page!
-        
-	</string>
     <string name="help_message">
         
         Every person who plays Magic: The Gathering has run out of mana at one point. Whether 

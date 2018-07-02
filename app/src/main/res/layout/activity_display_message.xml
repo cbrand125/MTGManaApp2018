@@ -16,7 +16,7 @@
 		android:layout_marginStart="16dp"
 		android:text="then you will also need"
 		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-		android:textSize="20sp"
+		android:textSize="18sp"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/untappedLandText" />
 
@@ -69,7 +69,7 @@
 		android:layout_marginTop="32dp"
 		android:text="If you use"
 		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-		android:textSize="20sp"
+		android:textSize="18sp"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/results" />
 
@@ -82,7 +82,7 @@
 		android:layout_marginTop="32dp"
 		android:text="land that comes out untapped"
 		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-		android:textSize="20sp"
+		android:textSize="18sp"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/redUntapped" />
 
@@ -95,7 +95,7 @@
 		android:layout_marginRight="16dp"
 		android:layout_marginStart="16dp"
 		android:layout_marginTop="16dp"
-		android:textSize="18sp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Body1"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
@@ -109,7 +109,7 @@
 		android:layout_marginStart="16dp"
 		android:text="land that comes out tapped"
 		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-		android:textSize="20sp"
+		android:textSize="18sp"
 		app:layout_constraintBottom_toBottomOf="@+id/redTapped"
 		app:layout_constraintStart_toEndOf="@+id/redTapped"
 		app:layout_constraintTop_toTopOf="@+id/redTapped"
